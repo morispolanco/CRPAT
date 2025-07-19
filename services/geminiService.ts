@@ -13,6 +13,9 @@ const buildFinalPrompt = (request: AppIdeaRequest): string => {
       3.  **Conceptualizar una Solución de App:** Diseña una idea de aplicación innovadora (móvil o web) que aborde directamente el problema identificado.
       4.  **Generar un Prompt C.R.P.A.T.:** Estructura tu análisis y la idea de la aplicación en un prompt completo y detallado utilizando la metodología "C.R.P.A.T.". Este prompt final debe ser tan completo que pueda ser entregado a un equipo de desarrollo para iniciar el proyecto.
 
+      **IDIOMA:**
+      La respuesta final y todo su contenido deben estar redactados exclusivamente en español.
+
       **METODOLOGÍA C.R.P.A.T. A UTILIZAR PARA EL OUTPUT:**
       - **Contexto (Context):** Describe el estado actual del mercado en ese campo y por qué existe una oportunidad para una nueva solución tecnológica.
       - **Rol (Role):** Define el rol experto que un equipo de desarrollo (o un LLM) debería asumir para construir esta aplicación (ej. "Sois un equipo de desarrollo ágil especializado en apps de salud...").
@@ -24,7 +27,7 @@ const buildFinalPrompt = (request: AppIdeaRequest): string => {
       "${request.idea}"
 
       ---
-      Ahora, ejecuta la tarea. Tu respuesta debe ser *únicamente* el prompt C.R.P.A.T. final. No incluyas explicaciones previas ni texto conversacional. Comienza directamente con la sección "Contexto:".
+      Ahora, ejecuta la tarea. Tu respuesta debe ser *únicamente* el prompt C.R.P.A.T. final, completamente en español. No incluyas explicaciones previas ni texto conversacional. Comienza directamente con la sección "Contexto:".
     `;
 };
 

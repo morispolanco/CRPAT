@@ -1,0 +1,6 @@
+{
+  "name": "Generador de Conceptos de App con C.R.P.A.T.",
+  "description": "Introduce un campo o industria y la IA identificará un problema, propondrá una solución de app y generará un prompt C.R.P.A.T. detallado.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
